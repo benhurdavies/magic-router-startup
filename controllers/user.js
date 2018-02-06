@@ -1,6 +1,6 @@
 export default {
-
+    
     get(req,res){
-        res.send("hello world");
+        res.send({id:5,name:"Das"});
     }
 }

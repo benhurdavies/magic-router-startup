@@ -28,7 +28,7 @@ module.exports = server.listen(port);
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-  console.log('Listening on ' + addr.toString());
+  console.log(`Listening on => ${addr.address}:${addr.port}`);
 }
 
 /**
